@@ -87,7 +87,7 @@ def dashboard():
         return redirect('/login')
     try:
         data=jwt.decode(token,SECRET_KEY,algorithms=["HS256"])
-        return render_template('dashboard.html',user=data['username'])
+        return render_template('dashboard.html',username=data['username'])
     except:
         return redirect('/login')
 

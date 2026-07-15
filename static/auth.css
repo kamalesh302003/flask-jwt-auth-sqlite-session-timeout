@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    min-height: 100%;
+    font-family: Inter, 'Segoe UI', sans-serif;
+    color: #e9f2ff;
+    background: radial-gradient(circle at top left, rgba(63, 131, 255, 0.35), transparent 22%),
+                radial-gradient(circle at bottom right, rgba(56, 170, 255, 0.2), transparent 20%),
+                linear-gradient(180deg, #0b2045 0%, #071b36 100%);
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 24px;
+}
+.page-shell {
+    width: 100%;
+    max-width: 520px;
+}
+.auth-card {
+    background: rgba(15, 32, 74, 0.88);
+    min-height: 360px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 32px;
+    padding: 36px 30px;
+    box-shadow: 0 40px 120px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(18px);
+}
+.auth-brand {
+    text-align: center;
+    margin-bottom: 32px;
+}
+.brand-mark {
+    display: inline-block;
+    font-size: 0.9rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #a3d4ff;
+    margin-bottom: 10px;
+}
+.auth-brand h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: -0.02em;
+}
+.auth-intro {
+    margin: 10px auto 0;
+    font-size: 0.95rem;
+    color: #b7d4ff;
+    max-width: 320px;
+}
+form {
+    display: grid;
+    gap: 18px;
+}
+label {
+    display: block;
+    font-size: 0.95rem;
+    color: #d8e8ff;
+    margin-bottom: 8px;
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    padding: 14px 16px;
+    background: rgba(255, 255, 255, 0.06);
+    color: #f8fbff;
+    font-size: 0.98rem;
+}
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: rgba(255, 255, 255, 0.55);
+}
+input:focus {
+    outline: none;
+    border-color: rgba(112, 178, 255, 0.88);
+    box-shadow: 0 0 0 4px rgba(82, 152, 255, 0.12);
+}
+button.submit {
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #4f87ff, #1e53d7);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+button.submit:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+}
+.auth-footer {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #afcdfc;
+}
+.auth-footer a {
+    color: #dce9ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+.nav-button {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.06);
+    color: #d6e8ff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+.nav-button:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+.message {
+    text-align: center;
+    color: #9dbce3;
+    font-size: 0.95rem;
+    margin-top: 8px;
+}

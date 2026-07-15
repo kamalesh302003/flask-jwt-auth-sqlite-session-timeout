@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Auth Page{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='auth.css') }}" />
+</head>
+<body>
+    <div class="page-shell">
+        <div class="auth-card">
+            <div class="auth-brand">
+                <span class="brand-mark">Your logo</span>
+                <h1>{% block heading %}Welcome{% endblock %}</h1>
+                <p class="auth-intro">Secure access for registered users.</p>
+            </div>
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+</body>
+</html>

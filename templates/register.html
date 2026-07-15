@@ -1,23 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Register</title>
-<link rel="stylesheet" href="{{url_for('static',filename='style.css')}}"/>
-</head>
-<body>
-
-<h1>Register Page</h1>
-
+{% extends 'base.html' %}
+{% block title %}Register{% endblock %}
+{% block heading %}Create Account{% endblock %}
+{% block content %}
 <form action="/register" method="POST">
-   <b> <label for="username">Username:</label> </b>
-   <input type="text" name="username" required><br><br>
-   <b> <label for="password">Password:</label> </b>
-   <input type="password" name="password" required><br><br>
-   <input type="Submit" value="Register">
-   <a href="/">
-   <button type="button">Login</button>
-   </a> 
+    <div>
+        <label for="username">Email</label>
+        <input type="text" id="username" name="username" placeholder="username@gmail.com" required />
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required />
+    </div>
+    <button type="submit" class="submit">Register</button>
 </form>
-
-</body>
-</html>
+<div class="auth-footer">
+    Already have an account? <a href="/login">Sign in</a>
+</div>
+{% endblock %}
