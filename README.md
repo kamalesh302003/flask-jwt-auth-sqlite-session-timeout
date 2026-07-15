@@ -1,0 +1,1 @@
+This project is a Flask-based user authentication system that supports user registration, secure password hashing, JWT token-based login, SQLite database storage, session management, logout functionality, and automatic inactivity timeout.
